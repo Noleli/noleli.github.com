@@ -1,0 +1,13 @@
+---
+title: Test post!
+layout: default
+---
+
+This is a test post. How's it doing?
+
+- item 1
+- item 2
+
+And another p.
+
+[^a]: My note, ya!

@@ -1,0 +1,20 @@
+{% assign menupage = "" %}
+{% if page.title == "About" %}
+	{% assign menupage = "about" %}
+{% elsif page.title == "Big Tweets" %}
+	{% assign menupage = "bigtweets" %}
+{% else %}
+	{% assign menupage = "blog" %}
+{% endif %}
+
+<div class="menu-header">
+	<ul id="menu-main-nav" class="menu">
+		<li id="menu-item-458" class="menu-item{% if menupage == "blog" %} current-menu-item{% endif %}">
+			<a href="{{site.url}}/">Blog</a>
+		</li>
+		<li id="menu-item-459" class="menu-item{% if menupage == "about" %} current-menu-item{% endif %}"><a href="{{site.url}}/about/">About</a></li>
+		<li id="menu-item-466" class="menu-item"><a href="http://localhost/research-projects/cuebert/">Research &#038; Projects</a></li>
+		<li id="menu-item-478" class="menu-item{% if menupage == "bigtweets" %} current-menu-item{% endif %}"><a href="{{site.baseurl}}big-tweets/">Big Tweets</a></li>
+		<li id="menu-item-465" class="menu-item"><a href="http://localhost/resume/">Résumé</a></li>
+	</ul>
+</div>

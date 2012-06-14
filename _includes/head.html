@@ -1,0 +1,37 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" dir="ltr" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js eq-ie7 lt-ie9 lt-ie8" dir="ltr" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" dir="ltr" lang="en"> <![endif]-->
+<!--[if IE 9]>    <html class="no-js eq-ie9" dir="ltr" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-js" dir="ltr" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>{% if page.title %}{{page.title}} | {% endif %}Noah Liebman</title>
+
+	<link href="{{site.baseurl}}styles/reset.css" rel="stylesheet" type="text/css" />
+	<link href="{{site.baseurl}}styles/960.css" rel="stylesheet" type="text/css" />
+	<link href="{{site.baseurl}}styles/style.css" rel="stylesheet" type="text/css" />
+
+	<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="/feed/" />
+
+	<script src="{{site.baseurl}}js/libs/modernizr-2.5.3.min.js"></script>
+</head>
+
+<body>
+	<!--[if lt IE 8]> <div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;'> <a href="http://http://www.mozilla.com/en-US/firefox/new/?ocid=ie6_countdown_bannercode"><img src="http://www.theie6countdown.com/images/upgrade.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." /></a></div> <![endif]-->
+	<div class="container_12">
+		
+		
+
+		<div class="grid_3 push_9">
+					{% include sidebar.html %}
+				</div><!-- end grid_3 -->
+				<div class="grid_8 suffix_1 pull_3">
+					<div id="content_area">
+						<div id="head">
+							<h1><a href="{{site.url}}" title="Noah Liebman" rel="home">Noah Liebman</a></h1>
+							{% include mainmenu.html %}
+						</div><!-- end head -->
+				
+						<div id="content">

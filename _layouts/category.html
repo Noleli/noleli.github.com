@@ -1,13 +1,10 @@
 ---
 index: true
+title: Big tweets
 ---
-{{paginator}}
-
 {% include head.html %}
 {% for post in paginator.posts %}
-	{% unless post.categories contains "big-tweets" %}
-		{% include post.html %}
-	{% endunless %}
+	{% include post.html %}
 {% endfor %}
 
 {% include foot.html %}

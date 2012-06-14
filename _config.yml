@@ -1,9 +1,9 @@
-safe:        true
-auto:        false
+safe:        false
+auto:        true
 server:      false
 server_port: 4000
 baseurl:    /
-url: http://noleli.github.com
+url: http://localhost:4000
 
 source:      .
 destination: ./_site
@@ -13,7 +13,8 @@ future:      true
 lsi:         false
 pygments:    false
 markdown:    maruku
-permalink:   
+permalink:   /:year/:month/:title/
+paginate:    10
 
 maruku:
   use_tex:    false
